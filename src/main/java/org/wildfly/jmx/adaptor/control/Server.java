@@ -71,6 +71,10 @@ public class Server {
             Iterator objectNamesIter = objectNames.iterator();
             while (objectNamesIter.hasNext()) {
                 ObjectName name = (ObjectName) objectNamesIter.next();
+                if ("jboss.jsr77".equals(name.getDomain())) {
+                       // skip jboss.jsr77 doman as it causes "IllegalStateException: JBAS019905: Should not get called"
+                       continue;
+                }
                 MBeanInfo info = server.getMBeanInfo(name);
                 String domainName = name.getDomain();
                 MBeanData mbeanData = new MBeanData(name, info);
