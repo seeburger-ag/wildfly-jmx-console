@@ -24,13 +24,18 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.wildfly.jmx-console</groupId>
+    <groupId>com.seeburger.as</groupId>
     <artifactId>jmx-console</artifactId>
     <version>1.0.0-SNAPSHOT</version>
 
     <name>WildFly: Legacy jmx-console</name>
 
     <packaging>war</packaging>
+
+    <properties>
+        <jboss.as.scm.url>https://github.com/seeburger-ag/wildfly-jmx-console</jboss.as.scm.url>
+        <jboss.as.scm.connection>git@github.com:seeburger-ag/wildfly-jmx-console.git</jboss.as.scm.connection>
+    </properties>
 
     <dependencyManagement>
         <dependencies>
