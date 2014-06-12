@@ -37,6 +37,14 @@
         <jboss.as.scm.connection>git@github.com:seeburger-ag/wildfly-jmx-console.git</jboss.as.scm.connection>
     </properties>
 
+    <!--
+    <scm>
+        <url>https://github.com/seeburger-ag/wildfly-jmx-console</url>
+        <connection>scm:git:https://github.com/seeburger-ag/wildfly-jmx-console.git</connection>
+        <developerConnection>scm:git:https://github.com/seeburger-ag/wildfly-jmx-console.git</developerConnection>
+    </scm>
+    -->
+
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -89,5 +97,16 @@
             </plugin>
         </plugins>
     </build>
+
+    <distributionManagement>
+        <repository>
+            <id>release</id>
+            <url>http://repo.seeburger.de/archiva/repository/release/</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshot</id>
+            <url>http://repo.seeburger.de/archiva/repository/snapshot/</url>
+        </snapshotRepository>
+    </distributionManagement>
 
 </project>
