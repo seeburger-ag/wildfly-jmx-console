@@ -25,7 +25,7 @@
 
     <groupId>com.seeburger.as</groupId>
     <artifactId>jmx-console</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
 
     <name>WildFly: Legacy jmx-console</name>
 
@@ -40,7 +40,7 @@
         <url>${jboss.as.scm.url}</url>
         <connection>scm:git:https://github.com/seeburger-ag/wildfly-jmx-console.git</connection>
         <developerConnection>scm:git:${jboss.as.scm.connection}</developerConnection>
-      <tag>jmx-console-1.0.0</tag>
+      <tag>HEAD</tag>
   </scm>
 
     <dependencyManagement>
