@@ -27,46 +27,33 @@
     <artifactId>jmx-console</artifactId>
     <version>1.0.1-SNAPSHOT</version>
 
-    <name>WildFly: Legacy jmx-console</name>
+    <name>WildFly: JMX-console</name>
 
     <packaging>war</packaging>
 
     <properties>
-        <jboss.as.scm.url>https://github.com/seeburger-ag/wildfly-jmx-console</jboss.as.scm.url>
-        <jboss.as.scm.connection>git@github.com:seeburger-ag/wildfly-jmx-console.git</jboss.as.scm.connection>
-
-        <!-- has issues on release-build -->
-        <maven.javadoc.skip>true</maven.javadoc.skip>
+        <version.org.jboss.jboss-common-core>2.2.22.GA</version.org.jboss.jboss-common-core>
+        <version.org.jboss.logging.jboss-logging>3.1.4.GA</version.org.jboss.logging.jboss-logging>
+        <version.dom4j>1.6.1</version.dom4j>
     </properties>
 
     <scm>
-        <url>${jboss.as.scm.url}</url>
+        <url>https://github.com/seeburger-ag/wildfly-jmx-consol}</url>
         <connection>scm:git:https://github.com/seeburger-ag/wildfly-jmx-console.git</connection>
-        <developerConnection>scm:git:${jboss.as.scm.connection}</developerConnection>
-      <tag>jmx-console-1.0.0</tag>
-  </scm>
-
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.wildfly</groupId>
-                <artifactId>wildfly-parent</artifactId>
-                <version>8.0.0.Final</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
+        <developerConnection>scm:git:git@github.com:seeburger-ag/wildfly-jmx-console.git</developerConnection>
+    </scm>
 
     <dependencies>
         <dependency>
             <groupId>org.jboss</groupId>
             <artifactId>jboss-common-core</artifactId>
+            <version>${version.org.jboss.jboss-common-core}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.jboss.logging</groupId>
             <artifactId>jboss-logging</artifactId>
+            <version>${version.org.jboss.logging.jboss-logging}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -79,6 +66,7 @@
         <dependency>
             <groupId>dom4j</groupId>
             <artifactId>dom4j</artifactId>
+            <version>${version.dom4j}</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
