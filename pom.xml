@@ -37,13 +37,11 @@
         <jboss.as.scm.connection>git@github.com:seeburger-ag/wildfly-jmx-console.git</jboss.as.scm.connection>
     </properties>
 
-    <!--
     <scm>
-        <url>https://github.com/seeburger-ag/wildfly-jmx-console</url>
+        <url>${jboss.as.scm.url}</url>
         <connection>scm:git:https://github.com/seeburger-ag/wildfly-jmx-console.git</connection>
-        <developerConnection>scm:git:https://github.com/seeburger-ag/wildfly-jmx-console.git</developerConnection>
+        <developerConnection>scm:git:${jboss.as.scm.connection}</developerConnection>
     </scm>
-    -->
 
     <dependencyManagement>
         <dependencies>
